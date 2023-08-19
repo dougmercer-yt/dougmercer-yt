@@ -1,0 +1,37 @@
+#!/bin/bash
+
+echo "Building libraries"
+
+pip install -e . > /dev/null
+g++ -std=c++11 -O3 -o lcs_cpp lcs.cpp
+
+N=30000
+N_REPS=1
+
+echo "Length $N Sequences, $N_REPS Reps"
+# Note: Can't run taichi and numba at same time.
+python benchmark.py --n $N --n-reps $N_REPS --python --numpy --numba --cython --cython-py
+python benchmark.py --n $N --n-reps $N_REPS --taichi
+./lcs_cpp $N $N_REPS
+
+echo "\n\n"
+
+N=30000
+N_REPS=100
+
+echo "Length $N Sequences, $N_REPS Reps"
+# Note: Can't run taichi and numba at same time.
+python benchmark.py --n $N --n-reps $N_REPS --numba --cython
+python benchmark.py --n $N --n-reps $N_REPS --taichi
+./lcs_cpp $N $N_REPS
+
+echo "\n\n"
+
+N=1000
+N_REPS=100000
+
+echo "Length $N Sequences, $N_REPS Reps"
+# Note: Can't run taichi and numba at same time.
+python benchmark.py --n $N --n-reps $N_REPS --numba --cython
+python benchmark.py --n $N --n-reps $N_REPS --taichi
+./lcs_cpp $N $N_REPS

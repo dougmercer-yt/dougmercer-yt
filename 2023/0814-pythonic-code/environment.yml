@@ -1,0 +1,7 @@
+name: pythonic-code
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python
+  - pip

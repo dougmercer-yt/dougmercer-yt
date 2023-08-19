@@ -1,0 +1,13 @@
+name: pdm
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python
+  - pytest
+  - black
+  - flake8
+  - isort
+  - mypy
+  - hypothesis
+  - pip

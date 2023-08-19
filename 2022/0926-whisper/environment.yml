@@ -1,0 +1,16 @@
+name: whisper
+channels:
+  - pytorch
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python
+  - rust
+  - pytorch
+  - notebook
+  - ipykernel
+  - ffmpeg
+  - pip
+  - pip:
+    # - git+https://github.com/openai/whisper.git  # From source
+    - openai-whisper

@@ -1,0 +1,6 @@
+[tool.isort]
+known_first_party = ["data_provider", "our_site"]
+known_third_party = ["ye_olde_data_provider"]
+
+[tool.mypy]
+allow_redefinition = true

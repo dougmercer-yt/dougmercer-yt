@@ -1,0 +1,16 @@
+name: faster-python
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python
+  - numba
+  - mypyc
+  - typer
+  - pip
+  - pip:
+    - cython
+    - taichi
+    - black
+    - isort
+    - flake8
