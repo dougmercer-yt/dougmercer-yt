@@ -1,0 +1,8 @@
+name: property-testing
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python
+  - pytest
+  - hypothesis
