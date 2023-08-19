@@ -7,7 +7,9 @@ Thanks for sponsoring the channel! Your contribution helps support the productio
 ## Contents
 This repository contains the code used in my YouTube videos.
 
-At the top level, I break up the videos by year, beginning with 2022 and up to the current year. After, each subfolder within a year corresponds to a video, with the first four digits indicating the publish date of the video in `mmdd` format, followed by a few words describing the topic of the video.
+At the top level, I break up the videos by year, beginning with 2022 and up to the current year.
+
+After, each subfolder within a year corresponds to a particular video. The older will begin with video's release date in `mmdd` format, followed by its title (won't match the full YouTube title, but should hopefully get the idea across).
 
 ## Setup
 If you just want to browse the code, feel free to click around and view the code in Github's WebApp browser.
@@ -47,6 +49,12 @@ Assuming you have a clean working directory,
 ```sh
 git pull
 ```
+
+### Some code from a video is missing-- can you add it?
+
+Maybe! If you create an issue describing what code you want added, I'll do my best to add it.
+
+However, I do not plan on adding code related to any `manim`-based animations I used in early videos. The reason for this is **the code probably doesn't work anymore**. In many of these early videos, I used a custom, experimental `manim` extension called `manic` (for `manim-code`) that I was simultaneously developing and using. The code was complicated and buggy due to some weirdness in how the `manim` library uses `pygments` and handles tokenization. So, rather than cluttering the repository with lots of broken code, I'm not going to publish the code for `manim`-related animations.
 
 ### Why is this repo a monorepo?
 I'd rather it not be, but Github Sponsors currently only allows me to grant access to one repository per "tier". In order to grant access to all video's code, rather than just one, I needed to organize the repository as a monorepo `¯\_(ツ)_/¯`.
