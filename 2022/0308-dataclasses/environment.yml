@@ -1,0 +1,13 @@
+name: dataclasses
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python
+  - pytest
+  - pympler
+  - black
+  - flake8
+  - isort
+  - mypy
+  - pip
