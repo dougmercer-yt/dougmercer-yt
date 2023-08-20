@@ -1,8 +1,10 @@
 # TorToiSe
 
+In [this video](https://youtu.be/Bbg-dPLTUhE), we use the TorToiSe text-to-speech library to emulate the voices of popular content creators using less than a minute of sample audio.
+
 For this video, I mostly just adapted the Google Colab provided by the repository author, [available here](https://colab.research.google.com/github/neonbjb/tortoise-tts/blob/main/tortoise_tts.ipynb).
 
-If there is particular info you want on this video, please feel free to create an issue and I'll update this README or add additional code examples.
+Note: If there is particular info you want on this video, please feel free to create an issue and I'll update this README or add additional code examples.
 
 ## Tips
 

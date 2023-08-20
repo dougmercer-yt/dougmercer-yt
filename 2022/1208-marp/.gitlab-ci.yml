@@ -1,0 +1,28 @@
+stages:
+  - build
+  - deploy
+
+generate-deck:
+  stage: build
+  image:
+    name: marpteam/marp-cli
+    entrypoint: [""]
+  variables:
+    MARP_SLIDES_FILE_NAME: "README.md"
+  script:
+    - mkdir build
+    - export MARP_USER="$(id -u):$(id -g)"
+    - /home/marp/.cli/docker-entrypoint $MARP_SLIDES_FILE_NAME -o build/index.html
+  artifacts:
+    paths:
+      - "build/"
+
+pages:
+  stage: deploy
+  script:
+    - mv build public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

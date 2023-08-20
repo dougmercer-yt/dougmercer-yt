@@ -1,6 +1,7 @@
 # whisper
+In [this video](https://youtu.be/Fpu_4ADgy9s) we use OpenAI's Whisper library to transcribe and translate multilanguage speech to text.
 
-Not a lot of code in this one! I'd recommend referring to the native documentation for directions on usage, but you might find the `environment.yml` I made helpful.
+Note: There isn't a ton of code in this video. I'd recommend referring to the [native documentation](https://github.com/openai/whisper) for usage instructions. However, you might find the `environment.yml` in this repository helpful.
 
 ## Setup
 
