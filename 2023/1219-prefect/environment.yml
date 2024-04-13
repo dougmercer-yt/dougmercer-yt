@@ -1,0 +1,5 @@
+name: prefect-pipeline
+dependencies:
+  - pandas
+  - prefect
+  - tabulate
