@@ -1,9 +1,5 @@
 # Doug Mercer YouTube
 
-## Thank you =]
-
-Thanks for sponsoring the channel! Your contribution directly supports the production of my YouTube videos. You rock =]
-
 ## Contents
 This repository contains the example code demonstrated in my YouTube videos.
 
@@ -11,10 +7,6 @@ Directories in this repository are organized by year, beginning with 2022. Withi
 
 ## Setup
 If you just want to browse the code, feel free to click around and view the code in Github's WebApp.
-
-That said, there are at least two good reasons why I recommend cloning a copy this repository:
-1. If you want to run or modify the code, you'll need a local copy of it.
-1. If you cancel your sponsorship, you'll no longer have access to this page. So, if you clone it, you'll at least have a local copy of everything!
 
 To clone the repository,
 1. Install Git on your local device.
@@ -52,11 +44,4 @@ git pull
 Maybe! If you create an issue describing what code you want added, I'll do my best to add it.
 
 ### Why is this repo a monorepo?
-I'd rather it not be, but Github Sponsors currently only allows me to automatically grant access to one repository per "tier". In order to grant access to all video's code, rather than just one, I decided to organize this repository as a monorepo `¯\_(ツ)_/¯`.
-
-### What is the license for all this code?
-I'm still in the process of figuring out what license is appropriate. In the meantime:
-1. You are welcome to use snippets of any code in this repository as you wish...
-2. ... however, I ask that you not share or reupload this repository in its entirety.
-
-For the time being limiting the distribution of this code raises money for my YouTube channel, which will help me make more videos or purchase equipment, software, assets, or subscriptions that improve the quality of my videos. I hope that one day this channel will be profitable enough to freely distribute the example code, but in the meantime thank you for supporting this channel!
+This was originally set up as a Github Sponsors benefit. Github Sponsors only allows automatically granting access to one repository per "tier". In order to grant access to all video's code, rather than just one, I decided to organize this repository as a monorepo. But now, the repo is openly available so... `¯\_(ツ)_/¯`.
